@@ -74,7 +74,7 @@ sub run {
     $server->reg_cb(
         send => sub {
             my ($res_cv, $params) = @_;
-            
+
             state $v = Data::Validator->new(
                 registration_ids => { isa => 'ArrayRef'},
                 collapse_key     => { isa => 'String', optional => 1},
@@ -116,7 +116,7 @@ __END__
 
 =head1 NAME
 
-AnyEvent::GCM::Server -
+AnyEvent::GCM::Server - server module for sending message to Google Cloud Messaging for Android (GCM)
 
 =head1 SYNOPSIS
 
@@ -127,13 +127,9 @@ AnyEvent::GCM::Server -
     port    => 8888,
   })->run;
 
-=head1 DESCRIPTION
-
-AnyEvent::GCM::Server is
-
 =head1 AUTHOR
 
-Shinichiro Sei E<lt>sei {at} kayac.comE<gt>
+Shinichiro Sei E<lt>shin1rosei {at} kayac.comE<gt>
 
 =head1 SEE ALSO
 

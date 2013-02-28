@@ -51,7 +51,7 @@ __END__
 
 =head1 NAME
 
-AnyEvent::GCM::Client -
+AnyEvent::GCM::Client - client module for AnyEvent::GCM::Server.
 
 =head2 SYNOPSIS
 
@@ -69,8 +69,4 @@ AnyEvent::GCM::Client -
         message => $msg,
      },
   );
-
-=head1 DESCRIPTION
-
-AnyEvent::GCM::Client is client module for AnyEvent::GCM::Server.
 
